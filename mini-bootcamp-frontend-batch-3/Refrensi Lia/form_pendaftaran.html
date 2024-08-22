@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form_pendaftaran.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Form Pendaftaran</title>
+
+</head>
+<body>
+    <div class="title">
+        <div class="circle"></div>
+        <h1>Formulir Pendaftaran</h1>
+        <div class="circle"></div>
+    </div>
+    <form action="" method="">
+        <fieldset>
+            <legend>Biodata Diri</legend>
+            <p>Masukkan data di bawah ini dengan benar</p>
+            <table>
+                <tr>
+                    <td>Nama Depan</td>
+                    <td>
+                        <input type="text" name="namaDepan" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nama Belakang</td>
+                    <td>
+                        <input type="text" name="namaBelakang" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" id="laki-laki" name="jenisKelamin" value="laki-laki">
+                        <label for="laki-laki">Laki-laki</label><br>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                        <label for="perempuan">Perempuan</label><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td>
+                        <input type="text" name="tempatLahir" placeholder="Kota tempat lahir" required >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>
+                        <input type="date" name="tanggalLahir">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Alamat Lengkap</legend>
+<table>
+    <tr>
+        <td>Provinsi</td>
+        <td>
+            <select class="select" name="provinsi" id="provinsi">
+                <option value="0">--Pilih Provinsi--</option>
+                <option value="JawaTimur">Jawa Timur</option>
+                <option value="JawaBarat">Jawa Barat</option>
+                <option value="JawaTengah">Jawa Tengah</option>
+              </select>
+              
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kota</td>
+        <td>
+            <select class="select" name="kota" id="kota">
+                <option value="JakartaBarat">Jakarta Barat</option>
+                <option value="JakartaSelatan">Jakarta Selatan</option>
+                <option value="JakartaPusat">Jakarta Pusat</option>
+                <option value="JakartaTimur">Jakarta Timur</option>
+              </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kecamatan</td>
+        <td>
+            <select class="select" name="kecamatan" id="kecamatan">
+                <option value="KebonJeruk">Kebon Jeruk</option>
+                <option value="JawaTimur">Jawa Timur</option>
+                <option value="JawaBarat">Jawa Barat</option>
+                <option value="JawaTengah">Jawa Tengah</option>
+              </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kelurahan</td>
+        <td>
+            <select class="select" name="kelurahan" id="kelurahan">
+                <option value="KebonJeruk">Kebon Jeruk</option>
+                <option value="JawaTimur">Jawa Timur</option>
+                <option value="JawaBarat">Jawa Barat</option>
+                <option value="JawaTengah">Jawa Tengah</option>
+              </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>
+        <td>
+            <textarea id="alamat" name="alamat" rows="10" cols="30" required> </textarea>
+        </td>
+    </tr>
+</table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Akun</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input name="email" type="email" placeholder="Alamat email aktif" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input name="username" type="text" placeholder="Maksimal 10 karakter">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="username" placeholder="Masukkan password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Konfirmasi Password</td>
+                    <td>
+                        <input type="password" placeholder="Masukkan kembali password" name="konfirmasiPassword" disabled>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pengalaman Kerja</legend>
+            <table>
+                <tr>
+                    <td>Nama Perusahaan</td>
+                    <td>
+                        <input type="text" placeholder="Masukkan nama perusahaanmu" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Posisi Pekerjaan</td>
+                    <td>
+                        <input type="text" name="posisiPekerjaan" placeholder="Masukkan posisi pekerjaanmu" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Periode Bekerja</td>
+                    <td>
+                        <label style="margin-left: 2vw;" class="tahun" for="sejakTahun">Sejak Tahun</label>  
+                        <input class="inputTahun" type="date" id="date" name="date" min="2000-01-01" max="2025-12-31"> <br>
+                        <label style="margin-left: 2vw;" for="sampaiTahun">Sampai Tahun</label>
+                        <input type="date" id="date" name="date" min="2000-01-01" max="2025-12-31"> <br>
+                        <input type="checkbox" id="setuju" name="setuju" value="setuju">
+                        <label for="sampaiSekarang">Sampai Sekarang</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Deskripsi Pekerjaan</td>
+                    <td>
+                        <textarea name="deskripsiPekerjaan" rows="10" cols="50" required></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Syarat dan Ketentuan</legend>
+            <p>Dengan memilih "Setuju", Anda sudah mengikuti <span><a style="color: blueviolet;" href="#">Syarat dan Ketentuan</a></span> yang berlaku.</p>
+            <input type="checkbox" id="setuju" name="setuju" value="setuju">
+            <label for="setuju"> Setuju </label><br>
+
+            <table style="margin-top: 15px;">
+                <tr style="display: flex; gap: 5px;">
+                    <td>
+                        <input class="button" type="submit" name="daftar" value="Daftar">
+                    </td>
+                    <td>
+                        <input class="button" type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.1)),
+    url('https://wallpaperaccess.com/full/2581470.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding: 5vw 20vw;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.circle{
+    background-color: #007bff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+fieldset{
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+fieldset:hover{
+    transform: translateY(-5px);
+}
+
+td input, td textarea, td select{
+    border-radius: 5px;
+  border: 0.5px solid black
+}
+
+td input{
+    margin-left: 2vw;
+}
+
+td textarea{
+    margin-left: 2vw;
+}
+
+.select{
+    width: 50%;
+    margin-left: 2vw;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #003d82;
+    transform: translateY(0);
+}
